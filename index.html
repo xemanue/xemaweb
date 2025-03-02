@@ -1,14 +1,100 @@
 <!DOCTYPE html>
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+    :root {
+        --bg: #161617;
+        --fg: #c9c7cd;
+        --orange: #ff9a87;
+        --pink: #ff6e9e;
+
+        background-color: var(--bg);
+        cursor: default;
+    }
+
+    .outfit {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .outfit-b {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .screen-centered {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 95vh;
+    }
+
+    div > div {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    #name {
+        font-size: 10vh;
+
+        background: linear-gradient(to bottom right, var(--orange) 0%, var(--pink) 100%);
+        background-clip: text;
+        color: transparent;
+        
+        margin: 0px 0px -1vh;
+        padding: 0px;
+    }
+
+    .link {
+        text-decoration: none;
+    }
+
+    .link:hover {
+        color: #95919d;
+        cursor: pointer;
+    }
+
+    span {
+        margin: 0px 1vh;
+        
+        user-select: none;
+    }
+
+    .text {
+        font-family: "Outfit";
+        font-size: 2vh;
+        
+        color: var(--fg);
+    }
+}
+
+</style>
+
+<meta name="viewport" content="width=720, initial-scale=0">
+
 <html>
     <head>
-        <title>xemanue</title>
-        <link rel="stylesheet" href="style.css">
+        <title>
+            xemanue
+        </title>
     </head>
 
     <body id="root">
-        <div>
-            <h1 id="name" class="outfit-b">xemanue</h1>
-            <a href="https://github.com/xemanue" class="link outfit">GitHub</a>
+        <div class="screen-centered">
+            <div>
+                <h1 id="name" class="outfit-b">xemanue</h1>
+                <a href="https://github.com/xemanue" class="outfit link text" target="_blank">GitHub</a><!--
+             --><span class="outfit text">-</span><!--
+             --><a href="cv.pdf" class="outfit link text" target="_blank">CV</a><!--
+             --><span class="outfit text">-</span><!--
+             --><a href="https://linkedin.com/in/josemanuelgarciacazorla" class="outfit link text" target="_blank">LinkedIn</a>
+            </div>
         </div>
     </body>
 </html>
